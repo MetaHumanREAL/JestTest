@@ -9,7 +9,7 @@ on:
             - main
 
 jobs:
-    test_deploy:
+    server_test:
         runs-on: ubuntu-latest
 
         steps:
@@ -27,5 +27,3 @@ jobs:
             - name: Run tests
               run: npm test
 
-            - name: Deploy to test environment
-              run: echo "Deploying to test environment"
